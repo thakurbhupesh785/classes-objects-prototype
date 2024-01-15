@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>question 2</title>
+</head>
+<body>
+ <h2> You are creating a new class Admin which inhertss from User. Add a new method called editData to Admin that allows it to edit website data.</h2>
+
+ <script>
+   let DATA = 'secret information';  
+  
+  class User {
+    constructor (name,email) {
+      this.name = name;
+      this.email = email;
+    }
+  
+
+  viewData () {
+    console.log(DATA)
+  }
+}
+
+class Admin extends User {
+  constructor (name,email) {
+    super(name,email);
+  }
+  editData () {
+    console.log('some new value');
+  }
+}
+
+  let student1 = new User ('bhupesh','abc@gmail.com')
+  let student2 = new User ('bhupesh','123@gmail.com')
+
+  let admin1 = new Admin('admin','admin@gmail.com')
+ </script>
+</body>
+</html>
